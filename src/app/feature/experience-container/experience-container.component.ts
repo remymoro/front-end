@@ -11,7 +11,7 @@ import { Experience } from "src/app/shared/interfaces/experience.interface";
     selector:'experience-container',
     standalone:true,
     template:`
-   <div class="w-full  min-h-screen  p-5 bg-[#001233] flex flex-col md:flex-row justify-center">
+   <div class="w-full  min-h-screen  p-5 bg-[#99DBF5] flex flex-col md:flex-row justify-center">
   <div class="flex flex-col w-full    md:w-1/2 md:my-0">
     <experience-list class="flex-1" 
     [experiences]="experiences" 
@@ -40,20 +40,20 @@ export class ExperienceContainerComponent{
         {
           year: 2021,
           title: "Plateforme Dyma",
-          description: "En 2021, j'ai commencé à apprendre le développement en autodidacte en créant des projets personnels et en suivant des tutoriels en ligne. J'ai approfondi mes connaissances en JavaScript, PHP, HTML et CSS en utilisant la plateforme Dyma, ce qui m'a permis de me préparer pour la suite de mon parcours en tant que développeur. À ce moment-là, mon objectif était de suivre la formation DWWM et de me familiariser avec les bases du web, notamment le fonctionnement des serveurs et les différentes techniques de mise en page en CSS (Flexbox, Grid et Float). ",
+          description: "Inscription à",
           img: "../assets/images/dyma-exp.png",
           projectTechnology: [
             {
-              technology: "HTML && CSS",
-              project1: "Café florette  site vitrine d'un café utilisation de la propriété Float.",
-              project2 :"Site Agence Ledor  vitrine d'une agence immobilière utilisation de flexbox.",
-              project3 :"site d'un journal avec utilisation des grid et flexbox.",
+              technology: "",
+              project1: "",
+              project2 :"",
+              project3 :"",
             },
            
             {
-              technology: "Javascript",
-              project1: "Projet de blog en VanillaJs (webpack,ES6,DOM,BOM)",
-              project2 :"Cours sur les bases de javascript (ES6,DOM,BOM,fetch,async/await)",
+              technology: "",
+              project1: "",
+              project2 :"",
             },
            
            

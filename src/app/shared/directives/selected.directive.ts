@@ -18,7 +18,7 @@ export class SelectedDirective  implements OnChanges {
   ngOnChanges(): void {
     if (this.appSelected) {
       this.backgroundColor = "white";
-      this.color = "red";
+      this.color = "#014D7E";
       this.fontWeight = "700";
     } else {
       this.backgroundColor = "";

@@ -20,7 +20,7 @@ import { Experience } from "src/app/shared/interfaces/experience.interface";
       <h3 class="mb-4 text-lg font-medium"></h3>
       <ul class="mb-4 space-y-2 mx-auto ">
         <li
-          class="text-gray-700  rounded-sm cursor-pointer hover:text-white  hover:bg-[#C26483] transition-colors duration-300 w-36 text-5xl"
+          class=" text-center rounded-sm cursor-pointer hover:text-white  hover:bg-[#014D7E] transition-colors duration-300 w-36 text-5xl"
           [appSelected]="experience.year === selectedExperience.year"
           (click)="selectExperience(index)"
           *ngFor="let experience of experiences;let index=index"

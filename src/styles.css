@@ -4,11 +4,7 @@
 
 
 
-nav{
-    background: #41295a; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #41295a, #2f0743); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #41295a, #2f0743)
-}
+
 
 footer{
     background: #41295a; /* fallback for old browsers */
@@ -18,5 +14,6 @@ footer{
 
 body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    
+    font-family: 'Poppins', sans-serif;
 }
