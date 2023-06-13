@@ -11,15 +11,18 @@ import { Experience } from "src/app/shared/interfaces/experience.interface";
     selector:'experience-container',
     standalone:true,
     template:`
-   <div class="w-full  min-h-screen  p-5 bg-[#99DBF5] flex flex-col md:flex-row justify-center">
-  <div class="flex flex-col w-full    md:w-1/2 md:my-0">
+   <div class="w-full  min-h-screen  p-5 bg-[#99DBF5] flex flex-col justify-between ">
+    <h1 class="text-4xl text-center "><span class="text-6xl custom-test">E</span>xperience</h1>
+  <div class="flex flex-col w-full     md:my-0">
     <experience-list class="flex-1" 
     [experiences]="experiences" 
     [selectedExperience]="selectedExperience"
     (changeExperience)="selectExperience($event)" />
   </div>
-  <div class="flex flex-col w-full  md:w-1/2 ">
-    <experience-details class="flex-1" [experience]="selectedExperience" />
+  <div class="flex flex-col mx-auto md:w-3/4 ">
+    <experience-details 
+    class="flex-1" [experience]="selectedExperience"
+     />
   </div>
 </div>
 
@@ -37,29 +40,29 @@ import { Experience } from "src/app/shared/interfaces/experience.interface";
 export class ExperienceContainerComponent{
 
     public experiences: Experience[] = [
-        {
-          year: 2021,
-          title: "Plateforme Dyma",
-          description: "Inscription à",
-          img: "../assets/images/dyma-exp.png",
-          projectTechnology: [
-            {
-              technology: "",
-              project1: "",
-              project2 :"",
-              project3 :"",
-            },
-           
-            {
-              technology: "",
-              project1: "",
-              project2 :"",
-            },
-           
-           
-           
-          ]
-        },
+      {
+        "year": 2021,
+        "title": "Autoformation via Plateforme",
+        "description": "Formation front-end avec BEM (SCSS) et JavaScript pour créer des projets pratiques : liste de tâches, blog CRUD et CV avec grilles. Maîtrise HTML & CSS (float, flexbox, grilles). Environnement de développement avec Webpack. Compétences solides pour développer des sites web interactifs, manipuler les éléments de la page et interagir avec des API. Focus sur l'architecture BEM pour une maintenance et une réutilisabilité améliorées. Autoformation progressive pour renforcer les compétences en développement front-end.",
+        "img": "../assets/images/dyma-exp.png",
+        "projectTechnology": [
+          {
+            "technology": "JavaScript",
+            "project1": "Liste de tâches",
+            "project2": "Blog CRUD",
+            "project3": "Environnement Webpack"
+          },
+          {
+            "technology": "HTML & CSS",
+            "project1": "Café & restaurant (float)",
+            "project2": "CV avec flexbox (Agence Ledor)",
+            "project3": "CV avec grilles"
+          }
+        ]
+      }
+      
+      
+      ,
         {
           year: 2022,
           title: "Diplôme DWWM",

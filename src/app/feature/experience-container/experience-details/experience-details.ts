@@ -19,7 +19,7 @@ import { Experience } from "src/app/shared/interfaces/experience.interface";
         <p class="text-2xl mb-2 text-center text-gray-700 dark:text-neutral-300">Les projets réalisés</p>
         <div class="grid grid-cols-1 gap-5 overflow-hidden">
           <div *ngFor="let project of experience.projectTechnology" class="flex flex-col">
-            <p class="text-sm mt-2 text-center text-red-600 font-bold">{{ project.technology }}</p>
+            <p class="text-sm mt-2 text-center text-blue-700 font-bold">{{ project.technology }}</p>
             <div class="border-t p-2 border-t-red-700"></div>
             <p class="text-base mt-1">{{ project.project1 }}</p>
             <p class="text-base">{{ project.project2 }}</p>

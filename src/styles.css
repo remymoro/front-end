@@ -4,7 +4,10 @@
 
 
 
-
+.custom-test{
+    font-family: 'Caveat', cursive;
+    color: white;
+}
 
 footer{
     background: #41295a; /* fallback for old browsers */
