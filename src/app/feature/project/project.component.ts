@@ -4,6 +4,10 @@ import { Component, HostListener } from "@angular/core";
     selector: "app-project",
     template: `
         <div class="w-full  bg-[#99DBF5]">
+         <div class="flex justify-center  lg:flex-row lg:w-1/3 lg:justify-self-auto ">
+            <h1 class="text-4xl underline decoration-red-400  pb-10 "><span class="text-6xl custom-test">M</span>es projets</h1>
+    
+          </div>
             <div class="md:w-1/2 sm: mx-auto p-5 w-full">
                 <div class="  ">
                     <div class="flex items-center ">

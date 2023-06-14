@@ -66,13 +66,13 @@ export class HeaderComponent{
    
   
 
-  @HostListener('window:resize',['$event'])
+  // @HostListener('window:resize',['$event'])
   toggleNavbar(event:Event) {
     this.hideMenu = !this.hideMenu;
     
     this.showMenu = this.showMenu;
     
-     
+   
 
  
   }

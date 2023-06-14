@@ -11,20 +11,25 @@ import { Experience } from "src/app/shared/interfaces/experience.interface";
     selector:'experience-container',
     standalone:true,
     template:`
-   <div class="w-full  min-h-screen  p-5 bg-[#99DBF5] flex flex-col justify-between ">
-    <h1 class="text-4xl text-center "><span class="text-6xl custom-test">E</span>xperience</h1>
-  <div class="flex flex-col w-full     md:my-0">
-    <experience-list class="flex-1" 
-    [experiences]="experiences" 
-    [selectedExperience]="selectedExperience"
-    (changeExperience)="selectExperience($event)" />
-  </div>
-  <div class="flex flex-col mx-auto md:w-3/4 ">
-    <experience-details 
-    class="flex-1" [experience]="selectedExperience"
-     />
-  </div>
+  <div class="w-full min-h-screen p-5 bg-[#99DBF5] flex flex-col  ">
+    <div class="flex justify-center  lg:flex-row lg:w-1/3 lg:justify-self-auto ">
+    <h1 class="text-4xl underline decoration-red-400  pb-10 "><span class="text-6xl custom-test">E</span>xperience</h1>
+    
 </div>
+     <div class="lg:flex-row lg:flex lg:h-full  ">
+       <div class="w-full  lg:h-full lg:w-2/6   md:my-0">
+          <experience-list class="flex-1 lg:h-full   " 
+           [experiences]="experiences" 
+           [selectedExperience]="selectedExperience"
+           (changeExperience)="selectExperience($event)" />
+       </div>
+        <div class="flex flex-col mx-auto  md:w-full  lg:w-1/2 ">
+           <experience-details 
+           class="flex-1 lg:w-full" [experience]="selectedExperience"
+           />
+       </div>
+    </div>
+  </div>
 
 
     `,
