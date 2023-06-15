@@ -16,9 +16,11 @@ import { Experience } from "src/app/shared/interfaces/experience.interface";
   selector: 'experience-list',
   standalone: true,
   template: `
+  
     <div class=" flex justify-center flex-col ">
       <h3 class="mb-4 text-lg font-medium"></h3>
       <ul class="mb-4 space-y-2 mx-auto ">
+     
         <li
           class=" text-center rounded-sm cursor-pointer hover:text-white  hover:bg-[#014D7E] transition-colors duration-300 w-36 text-5xl"
           [appSelected]="experience.year === selectedExperience.year"

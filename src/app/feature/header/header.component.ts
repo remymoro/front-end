@@ -6,7 +6,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from "@angular/router";
     selector:'app-header',
     standalone:true,
     template:`
-  <nav class="relative flex flex-wrap items-center justify-between px-2 py-4 bg-[#99DBF5] ">
+  <nav class="relative flex flex-wrap items-center justify-between px-2 py-4 bg-[#6A98F0] ">
     <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
       <div class="w-full  relative flex justify-between lg:w-72  px-4 lg:static lg:block lg:justify-start">
         <a class="w-full md:justify-between   flex  items-center" routerLink="" routerLinkActive="" [routerLinkActiveOptions]="{exact:true}">

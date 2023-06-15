@@ -7,8 +7,19 @@ import { Component } from "@angular/core";
     selector:"app-veille",
     standalone:true,
     template:`
+
+<div class="bg-blue-400 min-h-screen p-4 text-center">
+  <h3 class="text-lg font-medium mb-2">Cette rubrique est en construction</h3>
+  <p class="text-gray-600">Nous travaillons dur pour vous offrir du contenu bientôt !</p>
+  <div class="mt-4">
+    <svg class="animate-bounce w-6 h-6 mx-auto text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </div>
+</div>
+
     
-    <section class="text-gray-600 body-font">
+    <!-- <section class="body-font bg-[#6A98F0]">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center ">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
@@ -87,7 +98,7 @@ import { Component } from "@angular/core";
     </div>
     <button class="flex mx-auto mt-16 text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">Button</button>
   </div>
-</section>
+</section> -->
     
     
     `,

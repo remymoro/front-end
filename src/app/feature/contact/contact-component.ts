@@ -18,10 +18,17 @@ import { SuccessComponent } from '../success/success.component';
     selector:"app-contact",
     standalone:true,
     template:`
-<section class=" dark:bg-gray-900 ">
+<section class="bg-[#6A98F0] dark:bg-gray-900 ">
+<div class="w-full   bg-[#6A98F0] flex flex-col  ">
+    <div class="flex justify-center  lg:flex-row lg:w-1/3 lg:justify-self-auto ">
+    <h1 class="text-4xl underline decoration-red-400  pb-10 "><span class="text-6xl custom-test">C</span>ontact</h1>
+    
+</div>
+</div>
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Me contacter</h2>
-      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Vous rencontrez un problème technique ? Vous souhaitez nous envoyer un feedback sur une fonctionnalité en version bêta ? Vous avez besoin de plus d'informations sur notre plan Business ? Faites-le nous savoir.</p>
+  
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center  text-white">Me contacter</h2>
+      <p class="mb-8 lg:mb-16 font-light text-center text-white sm:text-xl">Vous rencontrez un problème technique ? Vous souhaitez nous envoyer un feedback sur une fonctionnalité en version bêta ? Vous avez besoin de plus d'informations sur notre plan Business ? Faites-le nous savoir.</p>
        <form [formGroup]="form" (ngSubmit)="submit()">
           <div>
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Votre adresse email</label>

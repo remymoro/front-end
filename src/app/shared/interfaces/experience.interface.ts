@@ -1,4 +1,5 @@
 import { ProjectTechnology } from "./projectTechnology.interface";
+import { download } from "./download.interface";
 
 
 export interface Experience{
@@ -7,6 +8,7 @@ export interface Experience{
     title:string,
     description:string,
     img:string,
+    download?:download[],
     projectTechnology? : ProjectTechnology[];
     
     
