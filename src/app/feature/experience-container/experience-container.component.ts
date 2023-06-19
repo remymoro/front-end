@@ -13,7 +13,7 @@ import { Experience } from "src/app/shared/interfaces/experience.interface";
     template:`
   <div class="w-full min-h-screen p-5 bg-[#6A98F0] flex flex-col  ">
     <div class="flex justify-center  lg:flex-row lg:w-1/3 lg:justify-self-auto ">
-    <h1 class="text-4xl underline decoration-red-400  pb-10 "><span class="text-6xl custom-test">E</span>xperience</h1>
+    <h1 class="text-4xl underline decoration-red-400  pb-10 "><span class="text-4xl custom-test">E</span>xperience</h1>
     
 </div>
      <div class="lg:flex-row lg:flex lg:h-full  ">
@@ -45,91 +45,48 @@ import { Experience } from "src/app/shared/interfaces/experience.interface";
 export class ExperienceContainerComponent{
 
   public experiences: Experience[] = [
-    {
-      "year": 2023,
-      "title": "Autoformation via Plateforme",
-      "description":"Continuité de parcours sur un CDA (concecpteur d'application web)Continuité de parcours en CDA à travers des modules sur le plan conceptuelle à travers UML, avec avancement de projet en Agilité notament sur un projet en c# WPF .Malheuresement l'organisme de formation à dû fermée. Donc j'aimerais poursuivre car j'aimerais appronfondir avec java même si en parallèle je m'auto-forme via l'application dyma   ",
-      "img": "../assets/images/dyma-exp.png",
-      "download":[
-       {
+    
+   {
+  year: 2023,
+  title: "CDA Concepteur développeur d'application (en cours) ",
+  img: "./assets/images/aen-exp.png",
+  projet: [
+  "Analyser un cahier des charges et choisir une solution technique adaptée parmi les solutions existantes.",
+  "Concevoir l’architecture technique d’une application à l’aide de diagrammes UMLCréer des projets web dynamiques grâce PHP.",
+  "Communiquer avec une base de données pour stocker et requêter des informations - Développer de manière professionnelle grâce au framework Symfony.",
+  "Mettre en oeuvre des tests unitaires et fonctionnels ainsi qu’utiliser les outils les plus connus d’intégration continue.",
+  "Produire une documentation technique et fonctionnelle de l’application.",
+  "Prendre en compte les problématiques de performance d’une application PHP."
+],
+  technology: ["C#", "PHP", "ANGULAR", "Symfony"],
+       
+},
+   {
+  year: 2022,
+  title: "Autoformation Dyma et DWWM(obtenue) ",
+  projet: [
+    "Projet de jeux de carte manipulation du dom avec stockage en session storage dans le but de généré un crud ",
+    "Conception du MCD et du MLD (projet librairie) ",
+    "Découverte d'Angular ",
+    "Découverte du framework Symfony à travers un projet de question réponse nommé Wonder utilisation des composant (HttpClient,HttpKernel,Validator,Form,Twig,Security) et bundle(MarkerBundle)  "
+  ],
+  img: "./assets/images/aen-exp.png",
+  technology: ["JavaScript", "HTML", "CSS", "Angular","php","symfony"],
+       
+},{
+  year: 2021,
+  title: "Autoformation Dyma  ",
+  projet: [
+    " Mise en place de layout à travers différent projets avec l'utilisation des propriétées(Flex,grid,float) mise en place d'architecture avec prépocésseur scss avec l'utilisation de BEM (block element modifier)  ",
+    "  Utilisation des compétences en HTML, SCSS et JavaScript pour créer un blog interactif. Intégration d'une API REST pour réaliser les opérations CRUD liées aux articles, incluant la récupération, la création, la mise à jour et la suppression",
+    " Création de blog avec un CRUD  commencement en procédural évolution vers de la POO utilisation de PDO SGBD avec MySqlworbench mise en place authentification(cookie sécurisé)serveur nginx"
+  
+  ],
+  img: "./assets/images/dyma-exp.png",
+  technology: ["JavaScript", "HTML", "CSS", "php"],
+}
         
-       }
-      ],
-      "projectTechnology": [
-        {
-          "technology": "C#",
-          "project1": "Projet en console d'application mcdo",
-          "project2": "Projet de facturation(Héritage et polymorphisme",
-          "project3": "Projet Journal - mise en place d'un journal avec utilisation des grids et SCSS"
-        },
-        
-      ]
-    }
-    ,
-    {
-      "year": 2022,
-      "title": "Diplôme DWWM",
-      "download":[{
-         "diplome1":"../assets/diplome/2022/udemy/udemyMerise.pdf",
-         "diplome1Name":"Certification(Merise)",
-         "diplome2":"../assets/diplome/2022/dyma/certificationPhp.pdf",
-         "diplome2Name":"Certification(php)",
-         "diplome3":"CertificationSymfony.pdf",
-         "diplome3Name":"Certification(Symfony"
-      }],
-      "description": "J'ai obtenu la certification DWWM (Développeur Web et Web Mobile) dans le but d'approfondir mes connaissances et de valider certaines compétences. Cette formation m'a permis de me familiariser avec l'aspect conception en utilisant le MCD (Modèle Conceptuel de Données) et le MLD (Modèle Logique de Données). J'ai également découvert le langage PHP en utilisant d'abord la version vanilla, puis j'ai utilisé le framework Symfony en formation et durant mon stage pour développer des applications. Du côté client, nous avons utlisé le framewok Angular  ",
-      "img": "../assets/images/aen-exp.png",
-      "projectTechnology": [
-        {
-          "technology": "HTML & CSS",
-          "project1": "Projet de site vitrine d'un food-truck avec utilisation de SCSS et la méthodologie BEM",
-          "project2": "Projet avec utilisation de Bootstrap",
-        },
-        {
-          "technology": "PHP",
-          "project1": "Projet de système d'authentification avec utilisation de PDO (PHP Data Objects) et POO (Programmation Orientée Objet)",
-          "project2": "Projet de mise en place de la structure MVC (Modèle-Vue-Contrôleur)",
-        },
-        {
-          "technology": "Symfony",
-          "project1": "Projet Quora - site de questions-réponses avec Dyma",
-          "project2": "Projet de blog dans le cadre d'un tutoriel (utilisation de Vich Uploader, Twig, Doctrine, etc.)",
-          "project3": "Projet de E-commerce avec utilisation de Symfony (Doctrine, Form, Validator, Twig, KnpPaginatorBundle, Webpack, Mailer, Stripe, API, etc.)",
-        },
-        {
-          "technology": "MCD & MLD",
-          "project1": "Projet de site e-commerce La Boutique Française (Udemy)",
-        }
-      ]
-    },
-    {
-      "year": 2021,
-      "title": "Autoformation via Plateforme",
-      "description":"J'ai suivi une formation approfondie sur le développement front-end via la plateforme Dyma. Cette formation m'a permis de maîtriser les langages HTML et CSS, ainsi que les techniques avancées telles que Flexbox, Grid et Float. J'ai également acquis des compétences en JavaScript pur en utilisant l'environnement de développement Webpack et le serveur de développement Webpack Dev Server. J'ai exploité l'API fournie par la plateforme Dyma pour mettre en œuvre des opérations CRUD, notamment la création de formulaires avec l'API Web FormData et l'utilisation de la méthode Fetch pour effectuer des requêtes HTTP asynchrones. À la fin de la formation, j'ai obtenu des certifications en HTML/CSS et en JavaScript. Cette autoformation m'a permis de développer des compétences en développement front-end et de devenir capable de créer des interfaces web interactives et réactives.",
-      "img": "../assets/images/dyma-exp.png",
-      "download":[
-       {
-        diplome1:"../assets/diplome/2021/certification-html-css.pdf",
-        diplome1Name:"Certification(HTML-CSS)",
-        diplome2:"../assets/diplome/2021/certification-js.pdf",
-        diplome2Name:"Certification(javascript)"
-       }
-      ],
-      "projectTechnology": [
-        {
-          "technology": "JavaScript",
-          "project1": "Projet de création de liste de tâches avec utilisation du DOM",
-          "project2": "Projet de blog avec utilisation de l'API fournie par Dyma (fetch, FormData, etc.)",
-        },
-        {
-          "technology": "HTML & CSS",
-          "project1": "Projet Café & Restaurant avec utilisation des floats",
-          "project2": "Projet Agence Ledor - agence immobilière avec utilisation des flexbox",
-          "project3": "Projet Journal - mise en place d'un journal avec utilisation des grids et SCSS"
-        }
-      ]
-    }
-  ];
+  ]
 
 
     public selectedExperience : Experience = this.experiences[0];

@@ -9,26 +9,33 @@ import { Router } from "@angular/router";
     standalone:true,
     template:`
 
-<section class="bg-gradient-to-r lg:h-[60vh] h-screen w-full  bg-[#6A98F0]">
-  <div class="container   xl:flex lg:flex  mx-auto px-1 sm:py-16 md:py-15">
-    <div class="w-full h-full  md:w-full lg:h-1/2 lg:w-1/2 flex items-start  justify-center">
-          <img src="../assets/images/Remy.png" alt="Image de Remy" class="block rounded-full border-2 bg-[#0E2954] border-white h-56 w-56  md:h-60 md:w-60 lg:w-80 lg:h-80 ">
+
+        
+<div class='w-full lg:h-[65vh] bg-[#6A98F0]'>
+  <div class='container   mx-auto px-8 flex flex-col justify-center h-full lg:flex lg:flex-row lg:justify-around lg:items-center'>
+    <div class="h-1/4  sm:flex  sm:justify-center md:h-96   lg:h-4/6  ">
+      <img src="./assets/images/Remy.png" class="rounded-full border-2  sm:h-60 md:h-full ">
+    </div>
+    <div class="h-1/4 lg:h-2/4  ">
+      <p class='text-[#ccd6f6]'>Bonjour, je m'appelle</p>
+      <h1 class='text-4xl sm:text-5xl font-bold text-[#ccd6f6]'>
+        Rémy
+      </h1>
+      <h2 class='text-4xl sm:text-4xl font-bold text-[#ccd6f6]'>
+        Je suis développeur Full Stack.
+      </h2>
+      <p class=' py-4 max-w-[700px] text-[#ccd6f6]'>
+        Je suis un développeur full-stack spécialisé dans la création d'expériences numériques exceptionnelles (et occasionnellement dans la conception). Actuellement, je me concentre sur le développement d'applications web full-stack réactives.
+      </p>
+      <div class="">
+        <button class='text-white group border-2 px-6 py-3 my-2 flex items-center  hover:bg-pink-600 hover:border-pink-600'>
+          Voir mes travaux
+          <span class='group-hover:rotate-90 duration-300'></span>
+        </button>
       </div>
- 
-
-        <div class="flex flex-col   justify-around w-full h-full lg:h-1/2 lg:w-1/2  ">
-          <h1 class="text-1xl md:text-3xl md:text-left text-center pb-2  font-bold" >Bonjour, je suis Rémy ! <span class="xl:ml-1">👋</span></h1>
-          <p class="text-1xl sm:text-2xl md:text-2xl  ">Je suis un développeur web passionné par la création de solutions numériques innovantes. Actuellement, je suis à la recherche d'une alternance pour poursuivre ma formation et développer mes compétences dans le domaine du développement web.</p>
-          <div class="flex w-full pt-2 sm:w-2/5 justify-start md:w-2/3 ">
-            <a href="#" class="bg-[#3A1D52] text-white text-1xl px-5 py-3 rounded transition-colors duration-300 hover:bg-blue-400 hover:text-gray-200">Me contacter</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    
+    </div>
+  </div>
+</div>
 
 
 
