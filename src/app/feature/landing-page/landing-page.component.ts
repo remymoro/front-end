@@ -17,14 +17,14 @@ import { Router } from "@angular/router";
       <img src="./assets/images/Remy.png" class="rounded-full border-2  sm:h-60 md:h-full ">
     </div>
     <div class="h-1/4 lg:h-2/4  ">
-      <p class='text-[#ccd6f6]'>Bonjour, je m'appelle</p>
-      <h1 class='text-4xl sm:text-5xl font-bold text-[#ccd6f6]'>
+      <p class='text-white'>Bonjour, je m'appelle</p>
+      <h1 class='text-4xl sm:text-5xl font-bold text-white'>
         Rémy
       </h1>
-      <h2 class='text-4xl sm:text-4xl font-bold text-[#ccd6f6]'>
+      <h2 class='text-4xl sm:text-4xl font-bold text-white'>
         Je suis développeur Full Stack.
       </h2>
-      <p class=' py-4 max-w-[700px] text-[#ccd6f6]'>
+      <p class=' py-4 max-w-[700px] text-white'>
         Je suis un développeur full-stack spécialisé dans la création d'expériences numériques exceptionnelles (et occasionnellement dans la conception). Actuellement, je me concentre sur le développement d'applications web full-stack réactives.
       </p>
       <div class="">
