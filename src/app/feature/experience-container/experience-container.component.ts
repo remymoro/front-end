@@ -51,14 +51,19 @@ export class ExperienceContainerComponent{
   title: "CDA Concepteur développeur d'application (en cours) ",
   img: "./assets/images/aen-exp.png",
   projet: [
-  "Analyser un cahier des charges et choisir une solution technique adaptée parmi les solutions existantes.",
-  "Concevoir l’architecture technique d’une application à l’aide de diagrammes UMLCréer des projets web dynamiques grâce PHP.",
+  "Création d'application desktop   ",
+  "Concevoir l’architecture technique d’une application à l’aide de diagrammes UML Créer des projets web dynamiques grâce PHP.",
   "Communiquer avec une base de données pour stocker et requêter des informations - Développer de manière professionnelle grâce au framework Symfony.",
   "Mettre en oeuvre des tests unitaires et fonctionnels ainsi qu’utiliser les outils les plus connus d’intégration continue.",
   "Produire une documentation technique et fonctionnelle de l’application.",
-  "Prendre en compte les problématiques de performance d’une application PHP."
 ],
-  technology: ["C#", "PHP", "ANGULAR", "Symfony"],
+technology: [
+  "assets/logoTech/symfony-white240x240.png",
+  "assets/logoTech/php-white240x240 (1).png",
+  "assets/logoTech/csharp240x240.png",
+  "assets/logoTech/java.jpg",
+   
+],
        
 },
    {
@@ -71,19 +76,31 @@ export class ExperienceContainerComponent{
     "Découverte du framework Symfony à travers un projet de question réponse nommé Wonder utilisation des composant (HttpClient,HttpKernel,Validator,Form,Twig,Security) et bundle(MarkerBundle)  "
   ],
   img: "./assets/images/aen-exp.png",
-  technology: ["JavaScript", "HTML", "CSS", "Angular","php","symfony"],
+  technology: [
+    "./assets/logoTech/mysql-logo.png",
+    "./assets/logoTech/node240x240.png",
+    "assets/logoTech/symfony-white240x240.png",
+    "assets/logoTech/symfony-white240x240.png",
+
+  ],
        
 },{
   year: 2021,
   title: "Autoformation Dyma  ",
   projet: [
     " Mise en place de layout à travers différent projets avec l'utilisation des propriétées(Flex,grid,float) mise en place d'architecture avec prépocésseur scss avec l'utilisation de BEM (block element modifier)  ",
-    "  Utilisation des compétences en HTML, SCSS et JavaScript pour créer un blog interactif. Intégration d'une API REST pour réaliser les opérations CRUD liées aux articles, incluant la récupération, la création, la mise à jour et la suppression",
-    " Création de blog avec un CRUD  commencement en procédural évolution vers de la POO utilisation de PDO SGBD avec MySqlworbench mise en place authentification(cookie sécurisé)serveur nginx"
+    " Utilisation des compétences en HTML, SCSS et JavaScript pour créer un blog interactif. Intégration d'une API REST pour réaliser les opérations CRUD liées aux articles, incluant la récupération, la création, la mise à jour et la suppression",
+    " Création de blog avec un CRUD  commencement en procédural évolution vers de la POO utilisation de PDO SGBD avec MySqlworbench mise en place authentification(cookie sécurisé)serveur nginx",
+
   
   ],
   img: "./assets/images/dyma-exp.png",
-  technology: ["JavaScript", "HTML", "CSS", "php"],
+  technology: [
+    "assets/logoTech/php-white240x240 (1).png",
+    "assets/logoTech/html.png",
+    "assets/logoTech/javascript.png",
+     
+  ],
 }
         
   ]

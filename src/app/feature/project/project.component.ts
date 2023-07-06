@@ -32,7 +32,7 @@ import { Component, HostListener } from "@angular/core";
                             </div>
                         </div>
                     </div>
-                     <div class=" box mt-4">
+                     <!-- <div class=" box mt-4">
                     <div class="flex items-center ">
                         <div class="shadow-lg rounded-lg overflow-hidden w-full bg-white">
                             <div class="flex flex-col shadow-lg dark:bg-neutral-700">
@@ -58,7 +58,7 @@ import { Component, HostListener } from "@angular/core";
                         </div>
                         
                 </div>
-                
+                 -->
               
        
     `,
@@ -100,7 +100,7 @@ export class ProjectComponent {
 
 
     onNavigate() {
-        window.location.href = 'https://playful-stardust-2871ac.netlify.app';
+        window.location.href = 'https://reverent-mestorf-5aba8c.netlify.app/';
       }
 
 }

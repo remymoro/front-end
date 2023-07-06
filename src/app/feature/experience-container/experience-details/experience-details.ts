@@ -7,25 +7,26 @@ import { Experience } from "src/app/shared/interfaces/experience.interface";
   standalone: true,
   template: `
   <div class="flex w-full  items-center">
-      <div class="shadow-lg rounded-lg overflow-hidden min-h-screen w-full  bg-white">
-          <div class="w-full  flex justify-center">
-             <img class="w-2/5" src="{{experience.img}}"/>
+      <div class="shadow-lg rounded-lg overflow-hidden  w-full p-5  bg-white">
+          <div class="w-full h-full   flex justify-center">
+             <img class="w-1/4 h-1/2 " src="{{experience.img}}"/>
           </div>
-     <div class="flex flex-col items-center justify-center">
-            <h2 class="text-xs  font-bold">{{experience.title}}</h2>
+     <div class="flex flex-col  items-center justify-center">
+            <h2 class="text-xs md:text-2xl lg:text-lg  font-bold">{{experience.title}}</h2>
            <div class="border-t h-px  border-0 w-11/12 border-t-blue-700"></div>
     </div>
-      <div class=" flex flex-col  ">
-            <ul *ngFor="let projet of experience.projet" class=" p-2 w-full  ">
-             <li class="text-xs text-blue-800">{{projet}}</li>
+      <div class=" flex flex-col   ">
+            <ul *ngFor="let projet of experience.projet" class=" p-2 w-full list-disc list-inside  ">
+             <li class="text-xs sm:text-sm md:text-lg lg:text-lg  list-disc  ">{{projet}}</li>
            </ul>
       </div>
-         <div class="flex flex-col items-center   ">
-           <div class="border-t h-px  border-0 w-11/12 border-t-blue-700"></div>
-         <div class="flex flex-wrap justify-around w-full">
-           <ul *ngFor="let technology of experience.technology" class="mt-3">
+           <div class="border-t h-px  border-0 w-11/12 border-t-blue-700  "></div>
+         <div class="flex flex-wrap justify-around w-full mt-5">
+           <ul class="w-full flex justify-around ">
              
-                  <li class="bg-blue-600 text-white p-2">{{technology}}</li>
+                  <li *ngFor="let technology of experience.technology" class="  ">
+                    <img src="{{technology}}" class="w-12 h-12">
+                  </li>
              </ul>
             </div>    
          </div>    
@@ -33,7 +34,6 @@ import { Experience } from "src/app/shared/interfaces/experience.interface";
 
 
           </div>
-        </div>
   `,
   imports: [
     CommonModule
